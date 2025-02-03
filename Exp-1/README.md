@@ -1,4 +1,4 @@
-EXP-1: **Streamlit Spiral Visualization App with Docker**
+ EXP-1: **Streamlit Spiral Visualization App with Docker**
 
 Welcome to the **Streamlit Spiral Visualization App**! This project demonstrates a simple and interactive Python application built with **Streamlit** to visualize a spiral. You can customize the spiral’s characteristics using adjustable sliders and view the changes in real-time. The app is Dockerized for easy deployment and consistency across environments.
 
@@ -7,7 +7,7 @@ Welcome to the **Streamlit Spiral Visualization App**! This project demonstrates
 - **Dynamic Visualization**: Watch the spiral change dynamically in response to slider adjustments.
 - **Dockerized Application**: The app is packaged within a Docker container, ensuring portability and easy deployment.
 
-## 🚀 **Technologies Used**
+ 🚀 Technologies Used
 - **Python 3**: The core programming language for this app.
 - **Streamlit**: A framework for building interactive and beautiful web applications.
 - **Altair**: A declarative statistical visualization library for Python used for rendering the spiral.
@@ -34,18 +34,12 @@ cd Docker_Practices
 Step 2: Create a requirements.txt File
 Ensure the project directory includes a requirements.txt file containing the necessary dependencies:
 
-txt
-Copy
-Edit
 streamlit
 altair
 pandas
 Step 3: Build the Docker Image
 Build the Docker image from the project directory:
 
-bash
-Copy
-Edit
 docker build -t streamlit .
 This will use the Dockerfile to build the image named streamlit.
 
@@ -56,27 +50,18 @@ Using Docker Desktop: Go to the Images section to verify if the streamlit image 
 
 Using the Command Line: Run the following command to list all Docker images:
 
-bash
-Copy
-Edit
 docker images
 This command will display all available images, including the streamlit image if it has been successfully built.
 
 Step 4: Run the Docker Container
 Start the app inside a Docker container by running:
 
-bash
-Copy
-Edit
 docker run -p 8501:8501 streamlit
 This command will map port 8501 inside the container to port 8501 on your local machine.
 
 Step 5: Access the Streamlit App
 After running the container, open your browser and go to:
 
-arduino
-Copy
-Edit
 http://localhost:8501
 The Streamlit app should now be visible, allowing you to interactively adjust the spiral’s number of points and turns.
 
@@ -102,9 +87,6 @@ If you encounter any issues, here are a few tips:
 
 Check Docker Logs: If the container fails to start, use the following command to check the logs:
 
-bash
-Copy
-Edit
 docker logs <container_id>
 Ensure Dependencies are Installed: If there are errors related to missing packages, make sure the requirements.txt is correctly copied into the Docker image, and the pip install command runs successfully during the Docker build.
 
