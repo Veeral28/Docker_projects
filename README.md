@@ -16,17 +16,7 @@ This repository serves as a learning log and a hands-on guide to mastering Docke
 
 🔹 Troubleshooting and common mistakes.
 
-📁 Folder Structure
 
-Docker_Practices/
-│── Getting_Started/   # Basic Docker commands and setup
-│── Image_Building/    # Dockerfile experiments and image creation
-│── Containers/        # Running and managing containers
-│── Networking/        # Docker networking concepts
-│── Volumes/          # Data persistence and volume management
-│── Docker_Compose/   # Multi-container applications
-│── Troubleshooting/  # Debugging and error handling
-│── Projects/         # Hands-on projects and case studies
 
 🚀 Getting Started
 
