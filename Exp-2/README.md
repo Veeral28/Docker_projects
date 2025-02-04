@@ -294,25 +294,29 @@ st.pyplot()
 ## Dockerfile
 
 ```dockerfile
-# Use official Python image from the Docker Hub
-FROM python:3.9-slim
+# Use a lightweight Python image
+FROM python:3-slim
 
-# Set the working directory in the container
-WORKDIR /app
+# Keeps Python from generating .pyc files
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-# Copy the requirements.txt into the container
-COPY requirements.txt ./
-
-# Install the dependencies
+# Install dependencies
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the current directory contents into the container
-COPY . .
+# Set working directory
+WORKDIR /app
+COPY . /app
 
-# Expose the port for Streamlit
+# Ensure Streamlit runs as non-root user
+RUN adduser --disabled-password --gecos "" appuser && chown -R appuser /app
+USER appuser
+
+# Expose the Streamlit default port
 EXPOSE 8501
 
-# Run the Streamlit app
+# Run Streamlit
 CMD ["streamlit", "run", "app.py"]
 ```
 
