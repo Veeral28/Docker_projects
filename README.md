@@ -1,39 +1,12 @@
-# 🚢🐳 Docker Practices – My Journey into Containerization
+# 🚀 Docker Projects & Experiments 🐳  
 
-Welcome to **Docker_Practices**! 🌊 This repository is my personal space for documenting everything I learn about **Docker**, from the basics to advanced containerization techniques. Whether you're a beginner or an experienced developer, you'll find useful insights, commands, and best practices here!
+Welcome to the **Docker Projects Repository**! This collection features **Dockerized applications**, including **ML apps, databases, network experiments, and AWS deployments**.  
 
----
-
-## 📌 About This Repository
-
-This repo serves as a **learning log** and **hands-on guide** to mastering Docker. It includes:
-
-✅ Essential Docker commands to get started.  
-✅ Building and managing Docker images & containers.  
-✅ Deep dive into **Docker volumes, networks, and Dockerfiles**.  
-✅ Best practices for efficient containerization.  
-✅ Troubleshooting common errors.  
+Each project showcases **real-world use cases** of containerization, helping you master **Docker for software development & cloud deployments**.  
 
 ---
 
-## 🚀 Getting Started
 
-Want to follow along? **Make sure Docker is installed on your system!**
-
-### 📥 Installation
-
-🔹 **Windows & Mac** – [Download Docker Desktop](https://www.docker.com/products/docker-desktop)  
-🔹 **Linux** – Install via package manager ([Guide](https://docs.docker.com/engine/install/))  
-
-### 🏁 First Docker Command
-
-Run your first container to verify installation:
-
-```bash
-docker run hello-world
-```
-
----
 
 ## 📚 Learning Resources
 
@@ -45,22 +18,116 @@ Here are some useful resources I frequently refer to:
 
 ---
 
-## 🛠️ Upcoming Topics
+## 🛠 Prerequisites  
 
-🔹 **Docker Images & Containers**  
-🔹 **Dockerfile & Multi-stage Builds**  
-🔹 **Docker Networking & Storage**  
-🔹 **Docker Compose & Swarm**  
-🔹 **Kubernetes (Maybe! 🤔)**  
+Make sure you have the following installed:  
+
+✅ **Docker** → `docker --version`  
+✅ **Python** (for Streamlit apps)  
+✅ **AWS CLI** (for EC2 deployment)  
 
 ---
 
-## 🙌 Contributions & Feedback
+## 🚀 Projects & Experiments  
 
-This is a **learning-focused** repo, and I’d love to hear from you! If you have **tips, best practices, or corrections**, feel free to:
+🔹 **[EXP-1: Streamlit Spiral Visualization](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-1)**  
+🔹 **[EXP-2: Binary Classification WebApp](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-2)**  
+🔹 **[EXP-3: Python Logging with Docker](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-3)**  
+🔹 **[EXP-4: Streamlit + PostgreSQL](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-4)**  
+🔹 **[EXP-5: MySQL Docker Container](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-5)**  
+🔹 **[EXP-6: Docker Network Experiment](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-6)**  
+🔹 **[EXP-7: ML Model Deployment with Evidently](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-7)**  
+🔹 **[EXP-8: Deploying on AWS EC2](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-8)**  
+🔹 **[EXP-9: Minikube with Docker](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-9)**  
 
-✅ Open an issue 📝  
-✅ Start a discussion 💬  
-✅ Share your knowledge 🚀  
+---
 
-Let’s **containerize the world** together! 🐳💙  
+### 🌟 **Spiral Visualization**  
+📌 **Description:** A **Dockerized Streamlit app** to generate interactive spiral patterns.  
+🛠 **How to Run:**  
+```bash  
+docker build -t streamlit-spiral .  
+docker run -p 8501:8501 streamlit-spiral  
+```
+🔗 **[View Project](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-1)**  
+
+---
+
+### 🌟 **Binary Classification WebApp**  
+📌 **Description:** A **Streamlit-based ML app** for binary classification using Logistic Regression.  
+🛠 **How to Run:**  
+```bash  
+docker build -t binary-classifier .  
+docker run -p 8501:8501 binary-classifier  
+```
+🔗 **[View Project Code](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-2)**  
+
+---
+
+### 🌟 **Python Logging with Docker**  
+📌 **Description:** Demonstrates **best practices for logging** inside a **Dockerized Python environment**.  
+🛠 **How to Run:**  
+```bash  
+docker build -t python-logging .  
+docker run python-logging  
+```
+🔗 **[View Project](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-3)**  
+
+---
+
+### 🌟 **Streamlit + PostgreSQL**  
+📌 **Description:** Connect **Streamlit with PostgreSQL database** inside a **Docker container**.  
+🔗 **[View Project](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-4)**  
+
+---
+
+### 🌟 **MySQL Docker Container**  
+📌 **Description:** Deploy a **MySQL database container** and connect it to applications.  
+🔗 **[View Project](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-5)**  
+
+---
+
+### 🌟 **Docker Network Experiment**  
+📌 **Description:** Understand **networking in Docker** by connecting multiple containers.  
+🔗 **[View Project](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-6)**  
+
+---
+
+### 🌟 **ML Model Deployment with Evidently**  
+📌 **Description:** Deploy an ML model with **Evidently AI** inside a Docker container.  
+🔗 **[View Project](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-7)**  
+
+---
+
+### 🌟 **Deploying on AWS EC2**  
+📌 **Description:** Deploy **Dockerized applications** on an **AWS EC2 instance**.  
+🔗 **[View Project](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-8)**  
+
+---
+
+### 🌟 **Minikube with Docker**  
+📌 **Description:** Run **Kubernetes locally** using Minikube with Docker.  
+🔗 **[View Project](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-9)**  
+
+---
+
+## 📚 Learning Resources  
+
+📖 **[Docker Docs](https://docs.docker.com/)**  
+📖 **[Streamlit Docs](https://docs.streamlit.io/)**  
+📖 **[AWS CLI Setup](https://aws.amazon.com/cli/)**  
+
+---
+
+
+
+## 🤝 Contributions  
+
+💡 Found a bug? **Open an issue!**  
+✨ Have an idea? **Submit a PR!**  
+📖 Want to improve docs? **Contribute!**  
+
+---
+
+🔥 **Happy Learning & Containerizing!** 🐳🚀
+
