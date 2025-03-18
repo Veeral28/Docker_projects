@@ -13,32 +13,32 @@ This repository contains a **Docker setup** for running a **MySQL container** wi
 
 ## 🛠️ Setup Instructions  
 
-### 1️⃣ Clone the Repository & Navigate to the Directory  
+### 1⃣ Clone the Repository & Navigate to the Directory  
 ```sh
 git clone https://github.com/Aditya5757raj/Docker_Practices.git
 cd Docker_Practices
 ```
 
-### 2️⃣ Build the Docker Image  
+### 2⃣ Build the Docker Image  
 Run the following command to **build** the MySQL image:  
 ```sh
 docker build -t mysql-container .
 ```
 
-### 3️⃣ Run the Container  
+### 3⃣ Run the Container  
 Start a **MySQL container** using the built image:  
 ```sh
 docker run --name mysql-container -d mysql-container
 ```
 
-### 4️⃣ Connect to MySQL  
+### 4⃣ Connect to MySQL  
 Access the MySQL shell inside the container:  
 ```sh
 docker exec -it mysql-container mysql -u root -p
 ```
 ➡️ Enter the **root password** (`root`) when prompted.  
 
-### 5️⃣ Stop and Remove the Container  
+### 5⃣ Stop and Remove the Container  
 To **stop** the running container:  
 ```sh
 docker stop mysql-container
@@ -47,6 +47,13 @@ To **remove** the container:
 ```sh
 docker rm mysql-container
 ```
+
+---
+
+## 👤 Result
+
+Check the database result using the following image:  
+![Database Result](result.jpg)
 
 ---
 
@@ -69,5 +76,5 @@ Docker_Practices/
 ---
 
 ### 📜 License  
-This project is **open-source** and available for modification. Feel free to contribute! 🚀  
+This project is **open-source** and available for modification. Feel free to contribute! 🚀
 
