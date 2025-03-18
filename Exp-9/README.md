@@ -1,4 +1,4 @@
-# Minikube with Docker on Windows ☸️
+# Minikube with Docker on Linux ☸️
 
 
 🚀 **Run Kubernetes Locally with Minikube & Docker** 🐳
@@ -7,31 +7,34 @@
 
 ## 🌟 Introduction
 
-**Minikube** is a lightweight Kubernetes tool that allows you to run a local cluster on your machine. It's perfect for developers looking to experiment with Kubernetes without setting up cloud infrastructure. Minikube works with various drivers like Docker, VirtualBox, and Hyper-V, making Kubernetes development easier than ever!
+**Minikube** is a lightweight Kubernetes tool that allows you to run a local cluster on your machine. It's perfect for developers looking to experiment with Kubernetes without setting up cloud infrastructure. Minikube works with various drivers like Docker, VirtualBox, and KVM, making Kubernetes development easier than ever!
 
 ## 🛠️ Prerequisites
 
 Before getting started, ensure you have the following installed:
 
-### ✅ 1. Install Docker Desktop 🐋
+### ✅ 1. Install Docker 🐋
 
-Minikube runs Kubernetes inside a Docker container, so you need Docker Desktop:
-- [Download Docker Desktop](https://www.docker.com/products/docker-desktop)
-- Enable **WSL 2 Backend** (recommended) ⚙️
-- If on Windows Pro/Enterprise, enable **Hyper-V** 🔧
+Minikube runs Kubernetes inside a Docker container, so you need Docker:
+- [Install Docker](https://docs.docker.com/engine/install/ubuntu/)
+- Start Docker Service:
+```bash
+sudo systemctl start docker
+sudo systemctl enable docker
+```
 
 ### ✅ 2. Install Minikube 📦
 
-Run the following command in **CMD or PowerShell (Admin):**
+Run the following command to install Minikube:
 ```bash
-choco install minikube
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
 ```
-_If you don't have Chocolatey, [install Minikube manually](https://minikube.sigs.k8s.io/docs/start/)._
 
 ### ✅ 3. Install kubectl (Kubernetes CLI) 🔗
 
 ```bash
-choco install kubernetes-cli
+sudo apt install -y kubectl
 ```
 Verify the installation:
 ```bash
@@ -119,7 +122,7 @@ _This removes all Kubernetes resources._
 
 ## 🎯 Conclusion
 
-By using **Minikube with Docker**, you can easily run Kubernetes locally without needing VirtualBox or Hyper-V. This setup allows developers to test and experiment with Kubernetes deployments effortlessly. 🚀🔥
+By using **Minikube with Docker**, you can easily run Kubernetes locally without needing VirtualBox or KVM. This setup allows developers to test and experiment with Kubernetes deployments effortlessly. 🚀🔥
 
 💡 **Next Steps:**
 - Deploy custom applications in Minikube.
@@ -127,4 +130,14 @@ By using **Minikube with Docker**, you can easily run Kubernetes locally without
 - Learn how to use Helm charts for deploying applications.
 
 💙 **Happy Kubernetes-ing!** ☸️🚢
+
+---
+
+## 📸 Example Output
+
+- **Terminal Output:**
+![Minikube Terminal Output](terminal.jpg)
+
+- **Browser View:**
+![Nginx Browser View](browser.jpg)
 
