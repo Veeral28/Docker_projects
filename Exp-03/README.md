@@ -1,4 +1,3 @@
-
 ---
 
 # 🐍 Python Logging Application with Docker
@@ -10,8 +9,8 @@ This project demonstrates how to create a Python application that logs data cont
 ## 📁 Project Structure
 
 ```plaintext
-. 
-├── app.py            # Python application that generates logs 
+.
+├── app.py            # Python application that generates logs
 └── Dockerfile        # Dockerfile to build the image
 ```
 
@@ -92,7 +91,7 @@ Explanation:
 
 ---
 
-### 🧐 Step 5: Verify Logs
+### 😨 Step 5: Verify Logs
 
 #### 1. **Check if the container is running:**
 
@@ -124,7 +123,19 @@ docker volume inspect my-app-data
 
 ---
 
-## 🧹 Stopping and Cleaning Up
+## 🪚 Results
+
+Here are sample terminal outputs showing logging details:
+
+### Image 1: Container Logs in Real-time
+![Logging in Terminal](image1.jpg)
+
+### Image 2: Viewing Log File from Docker Volume
+![Log File Content Docker Desktop](image2.jpg)
+
+---
+
+## 🪚 Stopping and Cleaning Up
 
 #### 1. **Stop the container:**
 
@@ -162,3 +173,4 @@ docker volume rm my-app-data
 ### 🚀 Happy Logging with Docker! 🚀
 
 This setup ensures that the Python application keeps running and logging continuously, and the logs are stored safely in a Docker volume for persistence.
+
