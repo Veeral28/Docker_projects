@@ -1,6 +1,6 @@
-EXP-1: *Streamlit Spiral Visualization App with Docker*
+## EXP-1: *Streamlit Spiral Visualization App with Docker*
 
-Welcome to the *Streamlit Spiral Visualization App! This project demonstrates a simple and interactive Python application built with **Streamlit* to visualize a spiral. You can customize the spiral’s characteristics using adjustable sliders and view the changes in real-time. The app is Dockerized for easy deployment and consistency across environments.
+Welcome to the *Streamlit Spiral Visualization App*! This project demonstrates a simple and interactive Python application built with **Streamlit** to visualize a spiral. You can customize the spiral’s characteristics using adjustable sliders and view the changes in real-time. The app is Dockerized for easy deployment and consistency across environments.
 
 ## 🌟 *Features*
 - *Interactive Controls*: Use sliders to adjust the number of points and turns in the spiral.
@@ -21,7 +21,6 @@ Before running the application, ensure you have the following installed on your 
 - *Git*: To clone the repository.
 
 If you don't have *Docker* installed, follow the instructions in the official [Docker Installation Guide](https://docs.docker.com/get-docker/).
-
 
 ## 🛠 **Getting Started**
 Follow these steps to set up and run the application either locally or inside a Docker container:
@@ -96,6 +95,11 @@ As you adjust the sliders, the spiral is dynamically updated in real-time.
 ### **Under the Hood**
 The app generates the spiral points based on polar coordinates. The `x` and `y` positions are calculated using mathematical functions, and the results are rendered using **Altair** charts in the Streamlit app.
 
+## 🖼 **Results**
+Here is an example of the Streamlit Spiral Visualization App in action:
+
+![Running App](image.jpg)
+
 ## 💻 **Code Explanation**
 - **NamedTuple for Points**: The spiral points are stored as `Point` objects (with `x` and `y` coordinates) using Python’s `namedtuple`.
   
@@ -123,90 +127,6 @@ We welcome contributions to improve this project! Here’s how you can contribut
 4. Push your changes to your forked repository.
 5. Open a pull request to merge your changes into the main repository.
 
-
 ---
 
 ### Happy Coding! 🎉
-
-___
-
-## Streamlit Python Code for Spiral Visualization
-
-```python
-import streamlit as st
-import pandas as pd
-import numpy as np
-import altair as alt
-from collections import namedtuple
-
-# Define a namedtuple to store points in the spiral
-Point = namedtuple('Point', ['x', 'y'])
-
-# Function to generate the spiral data
-def generate_spiral(num_points, num_turns):
-    data = []
-    for i in range(num_points):
-        angle = 2 * np.pi * num_turns * (i / num_points)
-        radius = i / num_points
-        x = radius * np.cos(angle)
-        y = radius * np.sin(angle)
-        data.append(Point(x, y))
-    return data
-
-# Streamlit App Layout
-st.title("Interactive Spiral Visualization")
-
-# Sliders for user input
-num_points = st.slider('Number of Points in Spiral', min_value=50, max_value=1000, value=500)
-num_turns = st.slider('Number of Turns in Spiral', min_value=1, max_value=10, value=5)
-
-# Generate the spiral data
-spiral_data = generate_spiral(num_points, num_turns)
-
-# Convert the spiral data to a DataFrame for visualization
-spiral_df = pd.DataFrame(spiral_data, columns=['x', 'y'])
-
-# Create the Altair chart to visualize the spiral
-chart = alt.Chart(spiral_df).mark_circle(size=3).encode(
-    x='x',
-    y='y'
-).properties(
-    width=600,
-    height=600
-)
-
-# Display the chart
-st.altair_chart(chart, use_container_width=True)
-```
-
-## Dockerfile
-
-```dockerfile
-# Use official Python image from the Docker Hub
-FROM python:3.9-slim
-
-# Set the working directory in the container
-WORKDIR /app
-
-# Copy the requirements.txt into the container
-COPY requirements.txt .
-
-# Install the dependencies
-RUN pip install -r requirements.txt
-
-# Copy the current directory contents into the container
-COPY . .
-
-# Expose the port for Streamlit
-EXPOSE 8501
-
-# Run the Streamlit app
-CMD ["streamlit", "run", "app.py"]
-```
-
-## requirements.txt
-
-```txt
-streamlit
-altair
-pandas
