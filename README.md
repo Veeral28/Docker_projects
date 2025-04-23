@@ -41,7 +41,7 @@ Make sure you have the following installed:
 🔹 **[EXP-9: Minikube with Docker](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-09)**  
 🔹 **[EXP-10: Docker Bake](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-10)**  
 🔹 **[EXP-11: Bakery Foundation Example on Windows 🍞](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-11)**  
-
+**[EXP-12:Titanic Survival Predictor: A Containerized Streamlit ML App 🍞](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-12)** 
 ---
 
 ### 🌟 **Spiral Visualization**  
@@ -62,7 +62,7 @@ docker run -p 8501:8501 streamlit-spiral
 docker build -t binary-classifier .  
 docker run -p 8501:8501 binary-classifier  
 ```
-🔗 **[View Project Code](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-02)**  
+🔗 **[View Project ](https://binary-classification-model-3gkqbrslvappdrcz2m9x2qc.streamlit.app/)**  
 
 ---
 
@@ -110,6 +110,14 @@ docker run python-logging
 ### 🌟 **Minikube with Docker**  
 📌 **Description:** Run **Kubernetes locally** using Minikube with Docker.  
 🔗 **[View Project](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-09)**  
+
+---
+
+---
+
+### 🌟 **Docker bake**  
+📌 **Description:** Docker Bake is a powerful tool that simplifies the process of building and managing multi-platform Docker images using docker buildx bake. With Docker Bake, you can define multiple build configurations using a single file and execute them in parallel, streamlining your image building process.
+🔗 **[View Project](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-10)**  
 
 ---
 
