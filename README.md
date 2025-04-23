@@ -27,7 +27,6 @@ Make sure you have the following installed:
 ✅ **AWS CLI** (for EC2 deployment)  
 
 ---
-
 ## 🚀 Projects & Experiments  
 
 🔹 **[EXP-1: Streamlit Spiral Visualization](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-01)**  
@@ -41,9 +40,9 @@ Make sure you have the following installed:
 🔹 **[EXP-9: Minikube with Docker](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-09)**  
 🔹 **[EXP-10: Docker Bake](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-10)**  
 🔹 **[EXP-11: Bakery Foundation Example on Windows 🍞](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-11)**  
-**[EXP-12:Titanic Survival Predictor: A Containerized Streamlit ML App 🍞](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-12)** 
----
+🔹 **[EXP-12: Titanic Survival Predictor – A Containerized Streamlit ML App 🍞](https://github.com/Aditya5757raj/Docker_Practices/tree/main/Exp-12)**  
 
+---
 ### 🌟 **Spiral Visualization**  
 📌 **Description:** A **Dockerized Streamlit app** to generate interactive spiral patterns.  
 🛠 **How to Run:**  
