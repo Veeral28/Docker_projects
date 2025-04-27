@@ -93,7 +93,7 @@ docker-compose down
 
 Here is a sample result from the classification output:
 
-![Running Model](image.jpg)
+![Image](https://github.com/user-attachments/assets/216e57aa-2234-4521-9ccd-4cbbf2e10d44)
 
 This image displays a confusion matrix, ROC curve, and a precision-recall curve for a classification task.
 
