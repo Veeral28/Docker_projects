@@ -112,14 +112,6 @@ You should see the multi-architecture image available under **Tags**.
 
 ---
 
-## 📸 Result Screenshots
-
-### Docker Hub Repository
-
-### Multi-Architecture Tags
-
----
-
 ## 🚀 Conclusion
 
 Docker Bake simplifies the process of building and pushing multi-platform images efficiently. With just a few commands, you can build images for different architectures, reducing the complexity of managing Docker images.
