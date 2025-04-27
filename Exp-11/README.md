@@ -249,7 +249,7 @@ This indicates that the AMI has been successfully created and is ready for use.
 
 **Screenshot: AMI Created Successfully**
 
-![Image](https://github.com/user-attachments/assets/9a6c3e2e-0c81-4f1a-a750-a753c3b82ac1)
+![Image](https://github.com/user-attachments/assets/765e9045-f8ed-4062-90db-95cd4a3f4c62)
 
 ---
 
