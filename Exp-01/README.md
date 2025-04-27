@@ -98,7 +98,7 @@ The app generates the spiral points based on polar coordinates. The `x` and `y` 
 ## 🖼 **Results**
 Here is an example of the Streamlit Spiral Visualization App in action:
 
-![Running App](image.jpg)
+![Image](https://github.com/user-attachments/assets/c57bfaf7-e1c3-4471-9939-5e8ed4ee43eb)
 
 ## 💻 **Code Explanation**
 - **NamedTuple for Points**: The spiral points are stored as `Point` objects (with `x` and `y` coordinates) using Python’s `namedtuple`.
