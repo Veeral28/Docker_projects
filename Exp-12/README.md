@@ -131,9 +131,9 @@ docker rmi titanic-prediction
 
 ## 🎯 Results
 
-![terminal output](image1.png)
+![Image](https://github.com/user-attachments/assets/ae503d50-1cdc-4535-be3f-4436174eaedb)
 
-![running image](image2.png)
+![Image](https://github.com/user-attachments/assets/05cbaae6-9e6b-466a-a042-f8abc631fb40)
 
 ---
 
