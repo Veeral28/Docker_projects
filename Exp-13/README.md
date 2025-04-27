@@ -162,7 +162,7 @@ docker stack services my_microservices
 - **API Gateway**: [http://localhost:8080](http://localhost:8080)
 - The API Gateway fetches responses from the Backend Service dynamically.
 
-![alt text](image-4.png)
+![Image](https://github.com/user-attachments/assets/d8a8bdf3-06c2-4d50-af84-2f0abcf0adda)
 
 To check logs for troubleshooting:
 ```bash
